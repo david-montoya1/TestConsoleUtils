@@ -16,12 +16,12 @@ namespace TestConsole
             //EditXmlFile();
             //RegexMatchRules();
             
-            ChangeAssemblyInfo("F:\\dv\\catalog",  version : "1.12.0.4");
+            ChangeAssemblyInfoVersion("F:\\dv\\catalog",  version : "1.12.0.4");
 
             Console.ReadLine();
         }
 
-        private static void ChangeAssemblyInfo(string folderPath, string version)
+        private static void ChangeAssemblyInfoVersion(string folderPath, string version)
         {
             var assemblyInfoFiles = System.IO.Directory.GetFiles(folderPath, "AssemblyInfo.cs", System.IO.SearchOption.AllDirectories);
             
